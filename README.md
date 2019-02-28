@@ -9,11 +9,11 @@ In this assignment, you'll create a burger logger with MySQL, Node, Express, Han
 
 ## Tech used
 
-Node.js 
-Express
-Express Handle Bar
-mySQL
-Heroku
+- Node.js 
+- Express
+- Express Handle Bar
+- mySQL
+- Heroku
 
 ## Example
 
