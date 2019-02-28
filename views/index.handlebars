@@ -1,0 +1,38 @@
+<div id="body">
+    <div id="header">
+    <h1>Burger!!!!</h1>
+    <img class="burger_img" src="/assets/img/burger.png">
+    <br>
+    <input type="text" name="burgerName" id="burgerName" placeholder="Insert New Burger">
+    <input type="submit" class="addNewBurger btn btn-info">
+    </div>
+
+
+    <div class="container">
+    <div class="grid">
+        <div class="row">
+        <div class="col-6">
+            <h2 style="text-align: center">Ready to Devoured</h2>
+
+            <ul class="notDevour list-group">
+            {{#each burgers}} {{#unless devoured}}
+            <li class="burger{{id}} list-group-item" data-id={{id}}>{{burger_name}}
+                <button class="btn devour" data-id={{id}}>Devour</button>
+            </li> {{/unless}} {{/each}}
+            </ul>
+
+        </div>
+        <div class="col-6">
+            <h2 style="text-align: center">Devoured!</h2>
+
+            <ul class="devoured list-group">
+            {{#each burgers}} {{#if devoured}}
+            <li class="burger{{id}} list-group-item" data-id={{id}}>{{burger_name}}
+            </li> {{/if}} {{/each}}
+            </ul>
+
+        </div>
+        </div>
+    </div>
+    </div>
+</div>

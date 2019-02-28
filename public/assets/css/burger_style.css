@@ -1,0 +1,13 @@
+#body{
+    background-color: bisque;
+}
+
+#header{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+.burger_img{
+    width: 250px;
+}
